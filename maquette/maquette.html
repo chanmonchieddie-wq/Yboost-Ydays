@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fott AI - Connexion</title>
+  <link rel="stylesheet" href="maquette.css">
+  <script src="maquette.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <svg class="data-lines" viewBox="0 0 1500 900" preserveAspectRatio="none" aria-hidden="true">
+      <g class="chart-grid">
+        <path d="M40 150H1460M40 250H1460M40 350H1460M40 450H1460M40 550H1460M40 650H1460M40 750H1460" />
+        <path d="M140 100V800M340 100V800M540 100V800M740 100V800M940 100V800M1140 100V800M1340 100V800" />
+      </g>
+      <path class="chart-line chart-line-blue" d="M35 610L160 560L280 590L410 470L535 510L660 390L785 425L910 310L1035 350L1160 250L1290 285L1460 170" />
+      <path class="chart-line chart-line-purple" d="M35 700L160 665L280 680L410 600L535 625L660 535L785 560L910 480L1035 500L1160 415L1290 435L1460 360" />
+      <g class="chart-points">
+        <circle cx="160" cy="560" r="5" />
+        <circle cx="410" cy="470" r="5" />
+        <circle cx="660" cy="390" r="5" />
+        <circle cx="910" cy="310" r="5" />
+        <circle cx="1160" cy="250" r="5" />
+        <circle cx="1460" cy="170" r="5" />
+        <circle cx="535" cy="625" r="4" />
+        <circle cx="910" cy="480" r="4" />
+        <circle cx="1290" cy="435" r="4" />
+      </g>
+      <g class="chart-bars">
+        <rect x="90" y="785" width="34" height="70" rx="5" />
+        <rect x="150" y="745" width="34" height="110" rx="5" />
+        <rect x="210" y="765" width="34" height="90" rx="5" />
+        <rect x="270" y="700" width="34" height="155" rx="5" />
+        <rect x="330" y="720" width="34" height="135" rx="5" />
+        <rect x="1170" y="720" width="34" height="135" rx="5" />
+        <rect x="1230" y="680" width="34" height="175" rx="5" />
+        <rect x="1290" y="700" width="34" height="155" rx="5" />
+        <rect x="1350" y="635" width="34" height="220" rx="5" />
+        <rect x="1410" y="660" width="34" height="195" rx="5" />
+      </g>
+    </svg>
+
+    <section class="intro">
+      <a href="#" class="logo">
+        <span class="logo-icon">✳</span>
+        <span>Fott <b>AI</b></span>
+      </a>
+
+      <h1>L’intelligence artificielle<br>
+        au service de vos idées</h1>
+
+      <p class="description">
+        Connectez-vous pour accéder à votre espace Fott AI
+        et profiter de tous nos outils IA, partout, tout le temps.
+      </p>
+
+      <div class="features">
+        <article class="feature">
+          <span class="feature-icon">ϟ</span>
+          <div>
+            <h3>Rapide</h3>
+            <p>Des réponses en quelques secondes</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon">⬡</span>
+          <div>
+            <h3>Sécurisé</h3>
+            <p>Vos données sont protégées</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon">✧</span>
+          <div>
+            <h3>Puissant</h3>
+            <p>Une IA avancée, à votre service</p>
+          </div>
+        </article>
+      </div>
+
+      
+<img
+  class="robot"
+  src="../images/WhatsApp%20Image%202026-10-26%20at%2016.57.27.jpeg"
+  alt="Robot intelligent analysant un ballon de football"
+>
+
+    </section>
+
+    <section class="login-area">
+      <div class="login-card">
+        <p class="eyebrow" id="eyebrow">BON RETOUR</p>
+        <h2 id="formTitle">Se connecter</h2>
+        <p class="subtitle" id="subtitle">
+          Accédez à votre compte Fott AI
+        </p>
+
+        <div id="message" class="message" role="status"
+          aria-live="polite"></div>
+
+        <form id="loginForm">
+          <label for="email">Adresse e-mail</label>
+
+          <div class="input-box">
+            <span class="input-icon">✉</span>
+            <input
+              id="email"
+              type="email"
+              placeholder="Adresse e-mail ou nom d’utilisateur"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <label for="password">Mot de passe</label>
+
+          <div class="input-box">
+            <span class="input-icon">♙</span>
+            <input
+              id="password"
+              type="password"
+              placeholder="Mot de passe"
+              minlength="8"
+              autocomplete="current-password"
+              required
+            >
+            <button type="button" id="togglePassword"
+              class="eye" aria-label="Afficher le mot de passe">
+              ◉
+            </button>
+          </div>
+
+          <div class="options">
+            <label class="remember">
+              <input type="checkbox" id="remember">
+              <span>Se souvenir de moi</span>
+            </label>
+
+            <button type="button" id="forgot" class="link">
+              Mot de passe oublié ?
+            </button>
+          </div>
+
+          <button type="submit" class="primary" id="submitButton">
+            Se connecter
+          </button>
+        </form>
+
+        <p class="signup" id="signupText">
+          Vous n’avez pas de compte ?
+          <a class="link" id="switchMode" href="/Inscription/inscription.html">
+            Inscrivez-vous
+          </a>
+        </p>
+
+        <p class="footer-note">
+          Vos données de compte sont enregistrées de manière sécurisée.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+

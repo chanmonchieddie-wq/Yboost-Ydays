@@ -1,0 +1,60 @@
+:root {
+  color-scheme: dark;
+  --bg: #08111f;
+  --panel: #101b2c;
+  --text: #f2f6fc;
+  --muted: #91a0b5;
+  --green: #53e3c2;
+  --line: rgba(166, 190, 221, .15);
+}
+
+* { box-sizing: border-box; }
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 18% 18%, rgba(76, 66, 153, .23), transparent 34rem),
+    radial-gradient(ellipse at 90% 85%, rgba(42, 112, 111, .13), transparent 32rem),
+    var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", Arial, sans-serif;
+}
+button, input { font: inherit; }
+a { color: inherit; text-decoration: none; }
+.auth-layout { display: flex; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; padding: 35px 20px 20px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px; font: 800 22px "Manrope", sans-serif; letter-spacing: -.8px; }
+.brand strong { color: var(--green); }
+.brand-mark { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(83, 227, 194, .42); border-radius: 11px; background: linear-gradient(145deg, rgba(83, 227, 194, .22), rgba(119, 135, 255, .18)); color: var(--green); font-size: 19px; }
+.auth-card { width: min(100%, 440px); padding: 32px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(145deg, rgba(17, 29, 47, .97), rgba(11, 21, 36, .98)); box-shadow: 0 26px 80px rgba(0, 0, 0, .3); }
+.back-link { display: inline-block; margin-bottom: 26px; color: #a3b0c2; font-size: 11px; }
+.back-link:hover, .login-prompt a:hover { color: var(--green); }
+.eyebrow { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--green); font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
+.eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px rgba(83, 227, 194, .6); }
+h1 { margin: 0 0 9px; font: 800 29px "Manrope", sans-serif; letter-spacing: -1.2px; }
+.intro { margin: 0 0 25px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+form label { display: block; margin: 16px 0 7px; color: #c5d0df; font-size: 10px; font-weight: 600; }
+form > input, .password-field { width: 100%; height: 45px; border: 1px solid var(--line); border-radius: 8px; background: #0a1525; }
+form > input, .password-field input { padding: 0 12px; outline: 0; color: var(--text); font-size: 11px; }
+form > input:focus, .password-field:focus-within { border-color: rgba(83, 227, 194, .65); box-shadow: 0 0 0 3px rgba(83, 227, 194, .08); }
+form input::placeholder { color: #718198; }
+.password-field { display: flex; align-items: center; }
+.password-field input { flex: 1; min-width: 0; height: 100%; border: 0; background: transparent; }
+.reveal-password { height: 100%; padding: 0 12px; border: 0; background: transparent; color: var(--green); cursor: pointer; font-size: 9px; }
+.field-hint { margin: 6px 0 0; color: #73839a; font-size: 9px; line-height: 1.5; }
+.submit-button { display: flex; width: 100%; height: 46px; align-items: center; justify-content: center; gap: 9px; margin-top: 24px; border: 0; border-radius: 8px; background: var(--green); color: #09211e; cursor: pointer; font-size: 11px; font-weight: 800; transition: filter .2s, transform .2s; }
+.submit-button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.submit-button:disabled { cursor: wait; opacity: .7; }
+.form-message { margin-bottom: 15px; padding: 11px 12px; border: 1px solid rgba(255, 120, 135, .2); border-radius: 8px; background: rgba(255, 109, 118, .08); color: #ffabb2; font-size: 10px; line-height: 1.5; }
+.form-message.success { border-color: rgba(83, 227, 194, .2); background: rgba(83, 227, 194, .07); color: var(--green); }
+.login-prompt { margin: 21px 0 0; color: #9ba9bb; font-size: 10px; text-align: center; }
+.login-prompt a { color: var(--green); font-weight: 700; }
+.security-note { margin: 21px 0 0; padding-top: 16px; border-top: 1px solid rgba(166, 190, 221, .08); color: #73839a; font-size: 9px; text-align: center; }
+.security-note span { margin-right: 4px; color: var(--green); }
+.page-note { margin: 16px 0 0; color: #63738a; font-size: 9px; }
+@media (max-width: 480px) {
+  .auth-layout { justify-content: flex-start; padding: 32px 16px 20px; }
+  .brand { margin-bottom: 20px; }
+  .auth-card { padding: 25px 20px; }
+  h1 { font-size: 26px; }
+}
